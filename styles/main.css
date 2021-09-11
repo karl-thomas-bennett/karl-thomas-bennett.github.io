@@ -78,10 +78,12 @@ a,
 a:hover,
 a:focus,
 a:active {
+  display: flex;
   text-decoration: none;
   color: black;
   height: 100%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .home {
