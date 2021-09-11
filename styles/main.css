@@ -12,6 +12,64 @@ p {
   margin-bottom: 0.1em;
 }
 
+.black-background {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 93%;
+}
+
+.core-list {
+  background-color: rgb(91, 185, 223);
+}
+
+.tech-list {
+  background-color: rgb(250, 118, 29);
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  height: 100%;
+}
+.core {
+  background-color: rgb(91, 185, 223);
+  width: 80%;
+  height: 100%;
+}
+.core-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 166, 214);
+  height: 7%;
+}
+
+.blog-item,
+.blog-item:hover,
+.blog-item:focus,
+.blog-item:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+  margin: 1% 2% 1% 2%;
+  height: 10%;
+  border-radius: 10px;
+  border-color: rgb(221, 221, 221);
+  border-width: 5px;
+  border-style: solid;
+  font-size: 300%;
+}
+
+.blog-list-top,
+.blog-list-top:hover,
+.blog-list-top:focus,
+.blog-list-top:active {
+  margin-top: 2%;
+}
 a,
 a:hover,
 a:focus,
@@ -44,7 +102,7 @@ a:active {
 
 .tech-nav {
   flex-grow: 3;
-  background-color: rgb(252, 133, 22);
+  background-color: rgb(247, 136, 46);
 }
 
 .contact-nav {
