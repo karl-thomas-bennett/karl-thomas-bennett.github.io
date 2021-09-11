@@ -1,7 +1,6 @@
 nav {
   display: flex;
   justify-content: row;
-  height: 7%;
 }
 
 a,
@@ -17,7 +16,6 @@ a:active {
   justify-content: column;
   background-color: black;
   color: rgb(221, 221, 221);
-  height: 93%;
 }
 
 .home-nav {
