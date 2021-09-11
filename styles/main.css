@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: row;
+}
+
+.home {
+  display: flex;
+  justify-content: column;
+  background-color: black;
+  color: rgb(221, 221, 221);
+}
+
+.home-nav {
+  flex-grow: 1;
+  background-color: lightgrey;
+}
+
+.core-nav {
+  flex-grow: 3;
+  background-color: skyblue;
+}
+
+.tech-nav {
+  flex-grow: 3;
+  background-color: rgb(252, 133, 22);
+}
+
+.contact-nav {
+  flex-grow: 1;
+  background-color: lightgrey;
+}
