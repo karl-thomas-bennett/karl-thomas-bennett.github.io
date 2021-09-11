@@ -3,6 +3,14 @@ nav {
   justify-content: row;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
 .home {
   display: flex;
   justify-content: column;
