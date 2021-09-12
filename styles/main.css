@@ -3,8 +3,9 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 7%;
   font-size: 200%;
+  flex-grow: 7;
+  flex-basis: 0;
 }
 
 p {
@@ -17,11 +18,18 @@ body {
   height: 100vh;
 }
 
+.main-structure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .black-background {
   display: flex;
   justify-content: center;
   background-color: black;
-  height: 93%;
+  flex-grow: 93;
+  flex-basis: 0;
 }
 
 .core-list {
@@ -37,19 +45,22 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 80%;
-  height: 100%;
 }
 .core {
   background-color: rgb(91, 185, 223);
   width: 80%;
-  height: 100%;
 }
 .core-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(46, 166, 214);
-  height: 7%;
+  background-color: skyblue;
+  flex-grow: 7;
+  flex-basis: 0;
+}
+
+.title {
+  margin: 0;
 }
 
 .blog-item,
@@ -92,9 +103,9 @@ a:active {
 .backa:focus,
 .back:active {
   position: absolute;
-  height: 3%;
-  padding: 2%;
-  background-color: skyblue;
+  height: 3vh;
+  padding: 2vh;
+  background-color: rgb(46, 166, 214);
 }
 
 .home {
@@ -104,7 +115,8 @@ a:active {
   align-items: center;
   background-color: black;
   color: rgb(221, 221, 221);
-  height: 93%;
+  flex-grow: 93;
+  flex-basis: 0;
 }
 
 .home-nav {
