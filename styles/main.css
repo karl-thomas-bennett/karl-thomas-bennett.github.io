@@ -50,12 +50,33 @@ body {
   background-color: rgb(91, 185, 223);
   width: 80%;
 }
+.tech {
+  background-color: rgb(250, 118, 29);
+  width: 80%;
+}
 .core-title {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: skyblue;
   flex-grow: 7;
+  flex-basis: 0;
+}
+.tech-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 136, 46);
+  flex-grow: 7;
+  flex-basis: 0;
+}
+
+.special-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 136, 46);
+  flex-grow: 3.5;
   flex-basis: 0;
 }
 
@@ -70,7 +91,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: skyblue;
   margin: 1% 2% 1% 2%;
   height: 10%;
   border-radius: 10px;
@@ -78,6 +98,13 @@ body {
   border-width: 5px;
   border-style: solid;
   font-size: 300%;
+}
+
+.core-item {
+  background-color: skyblue;
+}
+.tech-item {
+  background-color: rgb(247, 136, 46);
 }
 
 .blog-list-top,
@@ -100,12 +127,63 @@ a:active {
 
 .back,
 .back:hover,
-.backa:focus,
+.back:focus,
 .back:active {
   position: absolute;
   height: 3vh;
   padding: 2vh;
+}
+
+.long-body {
+  height: 200vh;
+}
+
+.text {
+  margin-top: 5%;
+}
+
+.absolute {
+  background-color: skyblue;
+  position: absolute;
+  height: 13%;
+  width: 10%;
+  margin: 12% 0 0 22%;
+  padding-top: 0.5%;
+  text-align: center;
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+  height: 7%;
+  width: 10%;
+  margin-left: 20%;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+.fixed {
+  background-color: skyblue;
+  position: fixed;
+  height: 10%;
+  width: 10%;
+  margin: 5% 0 0 10%;
+  padding-top: 2.5%;
+  text-align: center;
+  z-index: 5;
+}
+.core-back {
   background-color: rgb(46, 166, 214);
+}
+.tech-back {
+  background-color: rgb(250, 118, 29);
 }
 
 .home {
