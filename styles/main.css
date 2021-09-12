@@ -86,6 +86,16 @@ a:active {
   align-items: center;
 }
 
+.back,
+.back:hover,
+.backa:focus,
+.back:active {
+  position: absolute;
+  height: 3%;
+  padding: 2%;
+  background-color: skyblue;
+}
+
 .home {
   display: flex;
   flex-direction: column;
