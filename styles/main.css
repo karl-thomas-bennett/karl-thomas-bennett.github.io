@@ -102,9 +102,11 @@ body {
 
 .core-item {
   background-color: skyblue;
+  border-color: rgb(95, 204, 247);
 }
 .tech-item {
   background-color: rgb(247, 136, 46);
+  border-color: rgb(238, 155, 107);
 }
 
 .blog-list-top,
