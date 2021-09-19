@@ -109,6 +109,22 @@ body {
   border-color: rgb(238, 155, 107);
 }
 
+.link {
+  text-decoration: none;
+  text-decoration-color: blue;
+  color: blue;
+}
+
+.link:active {
+  text-decoration-color: yellow;
+  color: yellow;
+}
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: blue;
+}
+
 .blog-list-top,
 .blog-list-top:hover,
 .blog-list-top:focus,
