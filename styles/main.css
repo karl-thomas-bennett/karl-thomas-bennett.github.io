@@ -92,8 +92,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 1% 2% 1% 2%;
-  height: 10%;
+  height: max(auto, 10%);
   border-radius: 10px;
   border-color: rgb(221, 221, 221);
   border-width: 5px;
