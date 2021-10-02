@@ -59,9 +59,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: skyblue;
-  flex-grow: 7;
-  flex-basis: 0;
+  background-color: rgb(176, 225, 245);
+  height: 3em;
 }
 .tech-title {
   display: flex;
@@ -99,7 +98,7 @@ body {
   border-color: rgb(221, 221, 221);
   border-width: 5px;
   border-style: solid;
-  font-size: 300%;
+  font-size: 3em;
 }
 
 .core-item {
