@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
-        <title>Javascript and the DOM</title>
-        <script src="javascript-dom.js"></script>
-    </head>
-    <body>
-        <a class="back tech-back" href="../../tech.html">Back</a>
-        <div class="main-structure">
-            <div class="tech-title"><h1 class="title">Javascript and the DOM</h1></div>
-            <div class="black-background">
-                <div class="tech">
-                    <h1 id="header">Click</h1>
-                    <h2>The Difference Between HTML and CSS</h2>
-                    <p>Before I talk about Javascript, an explaination of the differences between HTML and CSS. Imagine HTML, CSS, and Javascript are people and HTML and CSS are preparing a birthday party for Javascript with a very large budget. HTML would decide what rooms there were and what goes in each room. CSS would decide the position of each room and how each room looks. Javascript would then arrive and change everything. For a less abstract example, HTML defines the structure of the page and what elements are in it and CSS defines the look, position, and size of each element. Javascript has the ability to change the HTML and CSS of a page at runtime (while the user is using it), letting you make changes to parts of the page without having to load a whole new page.</p>
-                    <h2>Control Flow and Loops</h2>
-                    <p>Control flow is basically "if, then" statements. If it is sunny, then I will put the washing on the line. If the bin is full, then I will empty it. If 4 is equal to 5, then something went wrong. Loops are a bit like "if, then" statements except when you've finished the "then" you check the "if" again and if it still is, you do the "then" again until it's not. But, instead of if, then, if, then, if, then... We could just say while. While the bin is not full, add some rubbish. While there is washing left, put some washing on the line. While laps completed is less than 10, keep racing.</p>
-                    <h2>The DOM</h2>
-                    <p>The DOM (Document Object Model) is a representation of the HTML and CSS of a webpage in the form of a Javascript object (it doesn't have to be a Javascript object, the model refers to the idea of the document being a physical object, but when using Javascript it is a Javascript object). This allows you to change the webpage by changing the object which then gets translated into changing the page in your browser. For example you change the header of a page by getting the header object from the document object and setting it's value to something else, within a Javascript file (so you could set the header to the last position clicked on the screen for example).</p>
-                    <h2>Objects and Arrays</h2>
-                    <p>Objects and arrays are two different ways of representing data. To access the data from an object you need the object name dot the name of the data you want, eg: car.colour to get the colour of the car. To access data from an array you need the name of the array and the position of the data you want in the array, eg: shoppinglist[5] to get the 6th item on the shopping list (Javascript is zero indexed meaning the item at position 0 is the first item).</p>
-                    <h2>Functions</h2>
-                    <p>Functions let you box up code into something similar to a variable, letting you use it multiple times. You can also replace many very similar lines of code with a function that takes parameters - input - based on the small differences the lines have. Functions are useful because they help organise your code and significantly reduce the amount of code you have to write because you're not repeating yourself.</p>
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
+  <title>Javascript and the DOM</title>
+  <script src="javascript-dom.js"></script>
+</head>
+<body>
+  <nav>
+    <a class="home-nav" href="../../../index.html">Home</a>
+    <a class="core-nav" href="../../core.html">Core</a>
+    <a class="tech-nav" href="../../tech.html">Tech</a>
+    <a class="contact-nav" href="../../contact.html">Contact</a>
+  </nav>
+  
+  <div class="main-structure">
+    <div class="black-background">
+      <div class="tech">
+        <div class="tech-title"><h1 class="title">Javascript and the DOM</h1></div>
+        <h1 id="header">Click</h1>
+        <h2>The Difference Between HTML and CSS</h2>
+        <p>Before I talk about Javascript, an explaination of the differences between HTML and CSS. Imagine HTML, CSS, and Javascript are people and HTML and CSS are preparing a birthday party for Javascript with a very large budget. HTML would decide what rooms there were and what goes in each room. CSS would decide the position of each room and how each room looks. Javascript would then arrive and change everything. For a less abstract example, HTML defines the structure of the page and what elements are in it and CSS defines the look, position, and size of each element. Javascript has the ability to change the HTML and CSS of a page at runtime (while the user is using it), letting you make changes to parts of the page without having to load a whole new page.</p>
+        <h2>Control Flow and Loops</h2>
+        <p>Control flow is basically "if, then" statements. If it is sunny, then I will put the washing on the line. If the bin is full, then I will empty it. If 4 is equal to 5, then something went wrong. Loops are a bit like "if, then" statements except when you've finished the "then" you check the "if" again and if it still is, you do the "then" again until it's not. But, instead of if, then, if, then, if, then... We could just say while. While the bin is not full, add some rubbish. While there is washing left, put some washing on the line. While laps completed is less than 10, keep racing.</p>
+        <h2>The DOM</h2>
+        <p>The DOM (Document Object Model) is a representation of the HTML and CSS of a webpage in the form of a Javascript object (it doesn't have to be a Javascript object, the model refers to the idea of the document being a physical object, but when using Javascript it is a Javascript object). This allows you to change the webpage by changing the object which then gets translated into changing the page in your browser. For example you change the header of a page by getting the header object from the document object and setting it's value to something else, within a Javascript file (so you could set the header to the last position clicked on the screen for example).</p>
+        <h2>Objects and Arrays</h2>
+        <p>Objects and arrays are two different ways of representing data. To access the data from an object you need the object name dot the name of the data you want, eg: car.colour to get the colour of the car. To access data from an array you need the name of the array and the position of the data you want in the array, eg: shoppinglist[5] to get the 6th item on the shopping list (Javascript is zero indexed meaning the item at position 0 is the first item).</p>
+        <h2>Functions</h2>
+        <p>Functions let you box up code into something similar to a variable, letting you use it multiple times. You can also replace many very similar lines of code with a function that takes parameters - input - based on the small differences the lines have. Functions are useful because they help organise your code and significantly reduce the amount of code you have to write because you're not repeating yourself.</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

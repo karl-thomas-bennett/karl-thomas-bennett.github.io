@@ -1,98 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
-        <title>Problem Solving</title>
-    </head>
-    <body>
-        <a class="back tech-back" href="../../tech.html">Back</a>
-        <div class="main-structure">
-            <div class="tech-title"><h1 class="title">Problem Solving</h1></div>
-            <div class="black-background">
-                <div class="tech">
-                  <h2>A Time I Solved a Problem</h2>
-                  <p>
-                    This is not exactly a simple problem I got blocked on but I managed a fairly elegant solution. I was making a game during my 
-                    study at victoria university using Processing, a program that helps with coding very graphical solutions - like a game. I was making a game that
-                    would detect if the player had drawn a zig-zag line, and if so, the line would shoot forward as a projectile that could hit your opponent. The problem I got
-                    stuck with was detecting a zig-zag without being too strict. I had the main idea for how I would do it, by checking the angle difference between the lines
-                    they made, checking if the small angle was less than about 30 degrees and in the opposite direction to the last one. I understand that that was fairly
-                    complicated and may not have described it well enough but that was working, it wasn't the problem. The problem arose from how I had to record the player's drawing.
-                    Their drawing was represented as a bunch of dots with lines connecting them - the dots being where the mouse was during that frame or game-tick. When a player 
-                    made their zig or zag it would often be made up of more than one line, meaning to the game it looked like a curve instead of a sharp turn.
-                    <br>
-                    <br>
-                    At first, I didn't know what was going on, it just didn't seem to be working. So I did the equivalent of Console.logging, and decided to obtain more information
-                    about the problem. I got the program to draw the dots that made up the line in red so I could see what they looked like and sure enough, there wasn't a single dot
-                    at the end of each zig or zag but multiple. Next I talked to myself about the problem, trying to figure out what exactly it was that I wanted, similar to the
-                    Rubber Ducky method but without the duck. After thinking about it for a bit I decided to try something. What if I took every 5th dot and drew a line between those
-                    instead (for the calculation, the player still sees the line like normal). This made game see the line much closer to how we see the line and after covering a
-                    few edge cases I was able to get the line working... Mostly. You could draw curves in some scenarios and it would still work but I had to finish the rest of the
-                    game before a deadline so I never fixed that.
-                  </p>
-                  <h2>Reflection on Problem Solving Techniques</h2>
-                  <h3>Psudocode</h3>
-                  <p>
-                    At this point I'm not that confident in using this technique. I'm sure I could and I would be fine at doing so but I'd feel more comfortable
-                    using a programming language. I should definitely use this as part of planning though because I can often sink time into one aspect of a function and then
-                    forget what I'm supposed to be doing next once I've finished it. If I had used psudocode (or psudo-psudocode), then I could skip over the implementation 
-                    details of the more complicated parts, allowing me to plan the whole function first and never get lost.
-                  </p>
-                  <h3>Trying something</h3>
-                  <p>
-                    I am very confident in using this technique. This technique is something you should do to help gain information about the problem you're trying to solve.
-                    When you don't fully understand a problem, try something. If it didn't work, try to work out why (and maybe try a few things). If it did work, you might be
-                    able to work out why it worked but otherwise try something else until it doesn't work (I find it easier to narrow down what doesn't work than what does when
-                    problems get more complicated).  
-                  </p>
-                  <h3>Rubber ducky method</h3>
-                  <p>
-                    I won't talk to an object, but I will talk to myself and to others (even if they have very little idea what I'm talking about). This method is about
-                    telling a rubber ducky your problem, the purpose is to get you to say the problem out loud as you'll be more likely to pick out flaws because you
-                    spend more time on saying the sentence than thinking it and it's easy to notice when something sounds wrong. I prefer to talk to myself or others 
-                    about the problem which should serve simialr purpose. This technique is about helping you understand the problem, and in particular what misconceptions
-                    about the problem you might have.
-                  </p>
-                  <h3>Reading error messages</h3>
-                  <p>
-                    I am very confident with this. Reading error messages can give you a very good starting point for where to look for your programming errors, however they will
-                    not always point out the cause so sometimes it's still up to you to work out how an error appeared and where the source of the error is actually located.
-                  </p>
-                  <h3>Console.logging</h3>
-                  <p>
-                    I am very confident with this. This techniques is especially useful when error messages have failed you. If the program crashes for a timeout or stack-overflow
-                    error, the program will often not give you an error message and will just terminate. In this instance you can litter you code with log statements to find out 
-                    where the code got stuck, and with a bit of time you'll find the infinite while loop you accidentally never broke out of on line 462.<br>
-                    It can also be useful for logging what values variables have at a given time in the program - if an input is giving you an unexpected value, what is that 
-                    unexpected value.
-                  </p>
-                  <h3>Googling</h3>
-                  <p>
-                    If you're having trouble with something and it's not too niche, there's a good chance someone else has also had the same problem and asked for help online.
-                    Don't reinvent the wheel, problem solving is as much about creating you own solutions as it is finding someone else's that fits your problem. I am also confident
-                    in my ability to google for a problem I'm facing. In order to do this you must boil down the problem into parts, or into something that's more general so you have
-                    a greater chance of finding a solution (or solutions) that, perhaps with a bit of tweaking, can solve your problem.
-                  </p>
-                  <h3>Asking your peers for help</h3>
-                  <p>
-                    I am not as confident with this one as the ones before. I can sometimes spend much longer on a problem than I need to because I don't ask others for help. I find
-                    it easy if they're right beside me but, particularly in lockdowns, I find it hard to reach out. (and to admit that I've been on a problem for way too long). Asking
-                    peers though is a great way to break past a block that's leading to frustration or demotivation, as they can usually help since they're working on the same thing, and 
-                    if they can't it's still nice to vent to someone or help them with their problems for a break from your own.
-                  </p>
-                  <h3>Asking coaches for help</h3>
-                  <p>Pretty much ditto, but it's very unlikely they can't help.</p>
-                  <h3>Improving your process with reflection</h3>
-                  <p>
-                    I think I am decent at this. The idea is that whenever you take a while to solve a problem and then quickly solve it after doing something, take note of what
-                    you did and try it sooner next time you end up with a similar sort of problem.
-                  </p>
-                  <br>
-                  <br>
-                </div>
-                
-            </div>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
+  <title>Problem Solving</title>
+</head>
+<body>
+  <nav>
+    <a class="home-nav" href="../../../index.html">Home</a>
+    <a class="core-nav" href="../../core.html">Core</a>
+    <a class="tech-nav" href="../../tech.html">Tech</a>
+    <a class="contact-nav" href="../../contact.html">Contact</a>
+  </nav>
+  <div class="main-structure">
+    
+    <div class="black-background">
+      <div class="tech">
+        <div class="tech-title"><h1 class="title">Problem Solving</h1></div>
+        <h2>A Time I Solved a Problem</h2>
+        <p>
+          This is not exactly a simple problem I got blocked on but I managed a fairly elegant solution. I was making a game during my 
+          study at victoria university using Processing, a program that helps with coding very graphical solutions - like a game. I was making a game that
+          would detect if the player had drawn a zig-zag line, and if so, the line would shoot forward as a projectile that could hit your opponent. The problem I got
+          stuck with was detecting a zig-zag without being too strict. I had the main idea for how I would do it, by checking the angle difference between the lines
+          they made, checking if the small angle was less than about 30 degrees and in the opposite direction to the last one. I understand that that was fairly
+          complicated and may not have described it well enough but that was working, it wasn't the problem. The problem arose from how I had to record the player's drawing.
+          Their drawing was represented as a bunch of dots with lines connecting them - the dots being where the mouse was during that frame or game-tick. When a player 
+          made their zig or zag it would often be made up of more than one line, meaning to the game it looked like a curve instead of a sharp turn.
+          <br>
+          <br>
+          At first, I didn't know what was going on, it just didn't seem to be working. So I did the equivalent of Console.logging, and decided to obtain more information
+          about the problem. I got the program to draw the dots that made up the line in red so I could see what they looked like and sure enough, there wasn't a single dot
+          at the end of each zig or zag but multiple. Next I talked to myself about the problem, trying to figure out what exactly it was that I wanted, similar to the
+          Rubber Ducky method but without the duck. After thinking about it for a bit I decided to try something. What if I took every 5th dot and drew a line between those
+          instead (for the calculation, the player still sees the line like normal). This made game see the line much closer to how we see the line and after covering a
+          few edge cases I was able to get the line working... Mostly. You could draw curves in some scenarios and it would still work but I had to finish the rest of the
+          game before a deadline so I never fixed that.
+        </p>
+        <h2>Reflection on Problem Solving Techniques</h2>
+        <h3>Psudocode</h3>
+        <p>
+          At this point I'm not that confident in using this technique. I'm sure I could and I would be fine at doing so but I'd feel more comfortable
+          using a programming language. I should definitely use this as part of planning though because I can often sink time into one aspect of a function and then
+          forget what I'm supposed to be doing next once I've finished it. If I had used psudocode (or psudo-psudocode), then I could skip over the implementation 
+          details of the more complicated parts, allowing me to plan the whole function first and never get lost.
+        </p>
+        <h3>Trying something</h3>
+        <p>
+          I am very confident in using this technique. This technique is something you should do to help gain information about the problem you're trying to solve.
+          When you don't fully understand a problem, try something. If it didn't work, try to work out why (and maybe try a few things). If it did work, you might be
+          able to work out why it worked but otherwise try something else until it doesn't work (I find it easier to narrow down what doesn't work than what does when
+          problems get more complicated).  
+        </p>
+        <h3>Rubber ducky method</h3>
+        <p>
+          I won't talk to an object, but I will talk to myself and to others (even if they have very little idea what I'm talking about). This method is about
+          telling a rubber ducky your problem, the purpose is to get you to say the problem out loud as you'll be more likely to pick out flaws because you
+          spend more time on saying the sentence than thinking it and it's easy to notice when something sounds wrong. I prefer to talk to myself or others 
+          about the problem which should serve simialr purpose. This technique is about helping you understand the problem, and in particular what misconceptions
+          about the problem you might have.
+        </p>
+        <h3>Reading error messages</h3>
+        <p>
+          I am very confident with this. Reading error messages can give you a very good starting point for where to look for your programming errors, however they will
+          not always point out the cause so sometimes it's still up to you to work out how an error appeared and where the source of the error is actually located.
+        </p>
+        <h3>Console.logging</h3>
+        <p>
+          I am very confident with this. This techniques is especially useful when error messages have failed you. If the program crashes for a timeout or stack-overflow
+          error, the program will often not give you an error message and will just terminate. In this instance you can litter you code with log statements to find out 
+          where the code got stuck, and with a bit of time you'll find the infinite while loop you accidentally never broke out of on line 462.<br>
+          It can also be useful for logging what values variables have at a given time in the program - if an input is giving you an unexpected value, what is that 
+          unexpected value.
+        </p>
+        <h3>Googling</h3>
+        <p>
+          If you're having trouble with something and it's not too niche, there's a good chance someone else has also had the same problem and asked for help online.
+          Don't reinvent the wheel, problem solving is as much about creating you own solutions as it is finding someone else's that fits your problem. I am also confident
+          in my ability to google for a problem I'm facing. In order to do this you must boil down the problem into parts, or into something that's more general so you have
+          a greater chance of finding a solution (or solutions) that, perhaps with a bit of tweaking, can solve your problem.
+        </p>
+        <h3>Asking your peers for help</h3>
+        <p>
+          I am not as confident with this one as the ones before. I can sometimes spend much longer on a problem than I need to because I don't ask others for help. I find
+          it easy if they're right beside me but, particularly in lockdowns, I find it hard to reach out. (and to admit that I've been on a problem for way too long). Asking
+          peers though is a great way to break past a block that's leading to frustration or demotivation, as they can usually help since they're working on the same thing, and 
+          if they can't it's still nice to vent to someone or help them with their problems for a break from your own.
+        </p>
+        <h3>Asking coaches for help</h3>
+        <p>Pretty much ditto, but it's very unlikely they can't help.</p>
+        <h3>Improving your process with reflection</h3>
+        <p>
+          I think I am decent at this. The idea is that whenever you take a while to solve a problem and then quickly solve it after doing something, take note of what
+          you did and try it sooner next time you end up with a similar sort of problem.
+        </p>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

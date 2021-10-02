@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
-        <title>Relative, Absolute, and Fixed</title>
-    </head>
-    <body class="long-body">
-        <a class="back tech-back" href="../../tech.html">Back</a>
-        <div class="main-structure">
-            <div class="special-title"><h1 class="title">The Difference Between Relative, Absolute, and Fixed</h1></div>
-            <div class="black-background">
-                <div class="tech">
-                    <div class="fixed">I'm fixed. <br>Not even scrolling can get rid of me!</div>
-                    <div class="absolute">My position is absoulte. <br>I stick to the page, even if the page moves, and I make room for no one (but my starting position is based off the last element)</div>
-                    <div class="relative green">I'm relatively positioned. <br>I make way for others relatively positioned, or they make way for me</div>
-                    <div class="relative yellow">I'm relatively positioned too.</div>
-                    <div class="text">
-                        <p>Relatively positioned elements will move out of the way of other relatively positioned objects that were declared (made) before them.</p>
-                        <p>Absolutely positioned elements are positioned based off the element before them but they don't care if another element is in the way (also negative margins work).</p>
-                        <p>Fixed elements stick to the screen. No matter how you scroll, fixed elements will always be in the same place.</p>
-                        <p>Give it a go and see for yourself. I've made this page twice as long as the others so you can scroll.</p>
+<head>
+    <meta charset="UTF-8">
+    <link href="../../../styles/main.css" rel="stylesheet" type="text/css">
+    <title>Relative, Absolute, and Fixed</title>
+</head>
+<body>
+  <nav>
+    <a class="home-nav" href="../../../index.html">Home</a>
+    <a class="core-nav" href="../../core.html">Core</a>
+    <a class="tech-nav" href="../../tech.html">Tech</a>
+    <a class="contact-nav" href="../../contact.html">Contact</a>
+  </nav>
 
-                        <p><br>Here's how I made the relative elements:<br></p>
-                        <img src="../../../images/Relative HTML.PNG" alt="Some html"> 
-                        <img src="../../../images/Relative CSS.PNG" alt="Some css">
+  <div class="main-structure">
+    
+    <div class="black-background">
+        <div class="tech">
+          <div class="special-title"><h1 class="title">The Difference Between Relative, Absolute, and Fixed</h1></div>
+          <div class="fixed">I'm fixed. <br>Not even scrolling can get rid of me!</div>
+          <div class="absolute">My position is absoulte. <br>I stick to the page, even if the page moves, and I make room for no one (but my starting position is based off the last element)</div>
+          <div class="relative green">I'm relatively positioned. <br>I make way for others relatively positioned, or they make way for me</div>
+          <div class="relative yellow">I'm relatively positioned too.</div>
+          <div class="text">
+            <p>Relatively positioned elements will move out of the way of other relatively positioned objects that were declared (made) before them.</p>
+            <p>Absolutely positioned elements are positioned based off the element before them but they don't care if another element is in the way (also negative margins work).</p>
+            <p>Fixed elements stick to the screen. No matter how you scroll, fixed elements will always be in the same place.</p>
+            <p>Give it a go and see for yourself. I've made this page twice as long as the others so you can scroll.</p>
 
-                        <p><br>The absolute element:<br></p>
-                        <img src="../../../images/Absolute HTML.PNG" alt="Some html"> 
-                        <img src="../../../images/Absolute CSS.PNG" alt="Some css">
+            <p><br>Here's how I made the relative elements:<br></p>
+            <img src="../../../images/Relative HTML.PNG" alt="Some html"> 
+            <img src="../../../images/Relative CSS.PNG" alt="Some css">
 
-                        <p><br>And the fixed element:<br></p>
-                        <img src="../../../images/Fixed HTML.PNG" alt="Some html"> 
-                        <img src="../../../images/Fixed CSS.PNG" alt="Some css">
+            <p><br>The absolute element:<br></p>
+            <img src="../../../images/Absolute HTML.PNG" alt="Some html"> 
+            <img src="../../../images/Absolute CSS.PNG" alt="Some css">
 
-                        <p><br>See how the fixed and absolute elements are placed before the relative elements. This is done to avoid having to work out their positions based on the last relative objects.</p>
-                        <p><br>Also the "z-index" you can see in the absolute and fixed element css is to push them to the front. I used 5 but any positive number will do.</p>
-                        <p><br>Btw, the back button is also position absolutely. But everything else uses Flexbox.</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <p><br>And the fixed element:<br></p>
+            <img src="../../../images/Fixed HTML.PNG" alt="Some html"> 
+            <img src="../../../images/Fixed CSS.PNG" alt="Some css">
+
+            <p><br>See how the fixed and absolute elements are placed before the relative elements. This is done to avoid having to work out their positions based on the last relative objects.</p>
+            <p><br>Also the "z-index" you can see in the absolute and fixed element css is to push them to the front. I used 5 but any positive number will do.</p>
+          </div>
+            
         </div>
-    </body>
+    </div>
+  </div>
+</body>
 </html>
